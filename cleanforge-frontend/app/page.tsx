@@ -155,14 +155,19 @@ export default function Home() {
             Drag & drop your CSV file here
           </p>
 
-          <input
-            type="file"
-            accept=".csv"
-            onChange={(e) => {
-              if (e.target.files) setFile(e.target.files[0]);
-            }}
-            className="mx-auto mb-6"
-          />
+          <label className="inline-block mb-6">
+            <input
+              type="file"
+              accept=".csv"
+              onChange={(e) => {
+                if (e.target.files) setFile(e.target.files[0]);
+              }}
+              className="hidden"
+            />
+            <span className="inline-block bg-gray-100 border-2 border-gray-300 text-gray-800 px-6 py-2 rounded-lg font-medium hover:bg-gray-200 hover:border-gray-400 cursor-pointer transition">
+              Choose File
+            </span>
+          </label>
 
           <button
             onClick={handleAnalyze}
