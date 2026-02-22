@@ -36,7 +36,7 @@ export default function Home() {
     formData.append("file", file);
 
     try {
-      const res = await fetch("http://localhost:8000/analyze", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/analyze`, {
         method: "POST",
         body: formData,
       });
@@ -71,7 +71,7 @@ export default function Home() {
     formData.append("file", file);
 
     try {
-      const res = await fetch("http://localhost:8000/clean", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/clean`, {
         method: "POST",
         body: formData,
       });
