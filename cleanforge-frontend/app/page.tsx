@@ -155,8 +155,9 @@ export default function Home() {
             Drag & drop your CSV file here
           </p>
 
-          <label className="inline-block mb-6">
+          <div className="mb-6">
             <input
+              id="fileInput"
               type="file"
               accept=".csv"
               onChange={(e) => {
@@ -164,10 +165,14 @@ export default function Home() {
               }}
               className="hidden"
             />
-            <span className="inline-block bg-gray-100 border-2 border-gray-300 text-gray-800 px-6 py-2 rounded-lg font-medium hover:bg-gray-200 hover:border-gray-400 cursor-pointer transition">
-              Choose File
-            </span>
-          </label>
+            <button
+              type="button"
+              onClick={() => document.getElementById("fileInput")?.click()}
+              className="bg-gray-100 border-2 border-gray-300 text-gray-800 px-6 py-2 rounded-lg font-medium hover:bg-gray-200 hover:border-gray-400 cursor-pointer transition"
+            >
+              {file ? file.name : "Choose File"}
+            </button>
+          </div>
 
           <button
             onClick={handleAnalyze}
