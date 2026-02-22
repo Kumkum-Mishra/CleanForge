@@ -1,0 +1,8 @@
+Name,Email,Phone,Age,Country,Salary
+John Doe,john@example.com,123-456-7890,29,USA,50000
+Jane Smith,jane@example,9876543210,34,United States,52000
+Bob Lee,bob@gmail.com,123 456 7890,,US,48000
+Alice Wong,alice@domain.com,123-456-7890,150,USA,1000000
+John Doe,john@example.com,123-456-7890,29,USA,50000
+,missing@email.com,555-555-5555,22,USA,
+Tom,test@test.com,,45,U.S.A,70000

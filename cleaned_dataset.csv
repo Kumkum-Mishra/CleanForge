@@ -1,0 +1,5 @@
+Name,Email,Phone,Age,Country,Salary
+John Doe,john@example.com,1234567890,29,USA,50000
+Jane Smith,jane@example,9876543210,34,USA,52000
+,missing@email.com,5555555555,22,USA,52000
+Tom,test@test.com,,45,USA,70000
