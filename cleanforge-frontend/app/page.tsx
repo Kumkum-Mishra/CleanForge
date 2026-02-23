@@ -224,7 +224,7 @@ export default function Home() {
                     <div className="text-sm">
                       <strong>Issues</strong>
                       <ul className="list-disc list-inside text-red-500 mt-2">
-                        {details.issues_detected.map(
+                        {details.issues_detected?.map(
                           (issue: string, i: number) => (
                             <li key={i}>{issue}</li>
                           )
@@ -235,7 +235,7 @@ export default function Home() {
                     <div className="text-sm mt-4">
                       <strong>Suggested Fixes</strong>
                       <ul className="list-disc list-inside text-green-600 mt-2">
-                        {details.suggested_fixes.map(
+                        {details.suggested_fixes?.map(
                           (fix: string, i: number) => (
                             <li key={i}>{fix}</li>
                           )
