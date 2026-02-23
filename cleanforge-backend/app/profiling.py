@@ -12,11 +12,13 @@ def generate_profile(df: pd.DataFrame):
         column_data = df[col]
 
         missing_count = column_data.isnull().sum()
+        non_missing_count = int(column_data.notnull().sum())
         missing_percent = round((missing_count / total_rows) * 100, 2)
 
         col_info = {
             "dtype": str(column_data.dtype),
             "missing_count": int(missing_count),
+            "non_missing_count": non_missing_count,
             "missing_percent": missing_percent,
             "unique_values": int(column_data.nunique())
         }
