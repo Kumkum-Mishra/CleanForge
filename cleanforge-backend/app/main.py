@@ -29,7 +29,7 @@ def sanitize_for_json(value):
 # ---------- CORS ----------
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Dev only
+    allow_origins=["https://clean-forge.vercel.app/"],  # Dev only
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
