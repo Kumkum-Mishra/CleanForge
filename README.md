@@ -203,17 +203,6 @@ Fix: use `http://localhost:<port>` or `http://127.0.0.1:<port>`.
 Cause: model returned non-strict JSON.
 Fix: parser includes fallback extraction, but quality improves with better input sample and stable API key/model output.
 
----
-
-## Resume Highlights (Quick Copy)
-
-- Built a full-stack AI-assisted data cleaning platform using FastAPI + Next.js.
-- Designed a universal cleaning engine for heterogeneous CSV schemas.
-- Implemented robust quality scoring and before/after improvement tracking.
-- Integrated LLM-based semantic issue detection and fix suggestions.
-- Deployed backend on Render and frontend on Vercel with environment-driven API routing.
-
----
 
 ## License
 
